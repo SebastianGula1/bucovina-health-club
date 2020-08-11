@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+#showcase{
+    background-image: url("../images/1078032.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.logo-container h1{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    color:#E8E8E8;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#showcase .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: #E8E8E8;
+    border: #E8E8E8 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#showcase .button:hover{ background-color: #202020;}
+
+#showcase nav{
+    position: absolute;
+    top:2.5%;
+    right:1%;
+    
+
+}
+.nav-links {
+    list-style: none;
+    
+    
+}
+
+nav ul li {
+    display: inline;
+    
+}
+a{
+    padding: 0px 40px;
+}
+
+.social-menu a{
+    margin: 0 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 24px;
+}
+
+.nav-link
+{
+    text-decoration: none;
+    color:#FFFFFF ;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+
+nav ul li a:hover{
+    color: #E23D28;
+    transition:  0.9s;
+
+}
+
+nav ul li a::after{
+    content: "";
+    position:absolute;
+    left:50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50% ;
+    width: 65%;
+    height: 2px;
+    background-color: #e5593f ;
+    transition: transform 250ms;
+    -webkit-transition: transform 250ms;
+    
+
+}
+
+nav ul li a:hover:after{
+    transform: translateX(-50%) scaleX(1);
+    -webkit-transform: translateX(-50%) scaleX(1);
+
+}
+
+@media screen and (max-width: 620px)
+{
+    .logo-container h1{
+        display: flex;
+        justify-content: center;
+        top: 1%;
+        left: 15%;
+        color:#E8E8E8;
+        font-weight: 600;
+        font-size: 30px;
+        
+    }
+    #showcase nav{
+        position: absolute;
+        top:6%;
+        right:7%;
+        
+    
+    }
+
+}
+
+@media screen and (min-width: 621px) and (max-width: 1024px)
+{
+    .logo-container h1{
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        color:#E8E8E8;
+        font-weight: 600;
+        font-size: 30px;
+        
+    }
+    #showcase nav{
+        position: absolute;
+        top:2.5%;
+        right:1%;
+        
+    
+    }
+    .nav-link
+{
+    text-decoration: none;
+    color:#FFFFFF ;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+a{
+    padding: 0px 30px
+}
+}
