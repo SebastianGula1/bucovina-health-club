@@ -23,6 +23,7 @@ a {
 }
 
 /* icons */
+
 .fa {
     padding: 0;
     width: 50px;
@@ -49,6 +50,19 @@ a {
     color: white;
 }
 
+.fa-instagram {
+    color: white;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fa-whatsapp  {
+    color:#fff;
+    background:
+    linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,
+    radial-gradient(#25d366 60%,transparent 0);
+  }
+
 /* hero */
 #showcase {
     background-image: url("../images/1078032.jpg");
@@ -63,9 +77,7 @@ a {
 }
 
 #showcase .button {
-    /* padding: 200px 0 0 0; */
-    /* display: flex; */
-
+   
     font-size: 18px;
     text-decoration: none;
     color: #E8E8E8;
@@ -109,6 +121,7 @@ nav h1 {
     color: #E8E8E8;
     font-weight: 600;
     font-size: 40px;
+   
 }
 
 /* nav-links */
@@ -154,9 +167,15 @@ nav h1 {
 
 }
 
-@media screen and (min-width: 621px) and (max-width: 1024px) {
+
+
+@media screen and (max-width: 280px) {
     .nav-links a {
-        font-size: 20px;
+        font-size: 14px;
+    }
+
+    nav h1{
+        font-size: 17px;
     }
 }
 
@@ -172,10 +191,9 @@ nav h1 {
     left: 20px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 
 /* mediaqueries */
-@media screen and (max-width: 620px) {}
