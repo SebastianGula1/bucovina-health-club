@@ -97,7 +97,6 @@ nav {
     max-width: 1200px;
     margin: auto;
     top: 20px;
- 
     bottom: auto;
     left: 20px;
     display: flex;
@@ -141,48 +140,3 @@ nav h1 {
     align-items: center;
 }
 
-
-/* Despre */
-
-.presentation{
-   
-    display: flex;
-    margin: auto;
-    width: 80%;
-    align-items: center;
-}
-.introduction{
-    flex:1;
-}
-.page-text h1{
-    margin-top: 10%;
-    font-size: 60px;
-    font-weight: 500;
-    background:  linear-gradient(to right, #383838	,  #000000	);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.page-text p{
-margin-top: 10px;
-font-size: 30px;
-color:#383838	;
-}
-
-.carousel-container{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    height: 50vh;
-   
-
-}
-
-.carousel-slider{
-    
-    margin-top: 13%;
-    border-radius: 35px;
-    min-height: 50vh;
-    height: 100%;
-}
