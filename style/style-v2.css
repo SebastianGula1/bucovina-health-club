@@ -65,7 +65,7 @@ a {
 
 /* hero */
 #showcase {
-    background-image: url("../images/1078032.jpg");
+    background-image: url("../images/1107999.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -97,12 +97,12 @@ nav {
     max-width: 1200px;
     margin: auto;
     top: 20px;
-    right: 20px;
+ 
     bottom: auto;
     left: 20px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -124,60 +124,6 @@ nav h1 {
    
 }
 
-/* nav-links */
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    color: #FFFFFF;
-    font-size: 25px;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.nav-links a:hover {
-    color: #E23D28;
-    transition: 0.9s;
-}
-
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%) scaleX(0);
-    -webkit-transform: translateX(-50%) scaleX(0);
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
-    width: 65%;
-    height: 2px;
-    background-color: #e5593f;
-    transition: transform 250ms;
-    -webkit-transition: transform 250ms;
-}
-
-.nav-links a:hover:after {
-    transform: translateX(-50%) scaleX(1);
-    -webkit-transform: translateX(-50%) scaleX(1);
-
-}
-
-
-
-@media screen and (max-width: 280px) {
-    .nav-links a {
-        font-size: 14px;
-    }
-
-    nav h1{
-        font-size: 17px;
-    }
-}
 
 /* social */
 .social-menu {
@@ -196,4 +142,47 @@ nav h1 {
 }
 
 
-/* mediaqueries */
+/* Despre */
+
+.presentation{
+   
+    display: flex;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+}
+.introduction{
+    flex:1;
+}
+.page-text h1{
+    margin-top: 10%;
+    font-size: 60px;
+    font-weight: 500;
+    background:  linear-gradient(to right, #383838	,  #000000	);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-text p{
+margin-top: 10px;
+font-size: 30px;
+color:#383838	;
+}
+
+.carousel-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+   
+
+}
+
+.carousel-slider{
+    
+    margin-top: 13%;
+    border-radius: 35px;
+    min-height: 50vh;
+    height: 100%;
+}
