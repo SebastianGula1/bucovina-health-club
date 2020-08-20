@@ -16,11 +16,6 @@ a {
     text-decoration: none;
 }
 
-@media screen and (min-width: 621px) and (max-width: 1024px) {
-    a {
-        padding: 0px 30px;
-    }
-}
 
 /* icons */
 
@@ -53,15 +48,16 @@ a {
 .fa-instagram {
     color: white;
     background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
-.fa-whatsapp  {
-    color:#fff;
+
+.fa-whatsapp {
+    color: #fff;
     background:
-    linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,
-    radial-gradient(#25d366 60%,transparent 0);
-  }
+        linear-gradient(#25d366, #25d366)10px 84%/10px 15px no-repeat,
+        radial-gradient(#25d366 60%, transparent 0);
+}
 
 /* hero */
 #showcase {
@@ -77,7 +73,7 @@ a {
 }
 
 #showcase .button {
-   
+
     font-size: 18px;
     text-decoration: none;
     color: #E8E8E8;
@@ -92,7 +88,7 @@ a {
 
 /* navigatie */
 nav {
-    position: fixed;
+    position: absolute;
     width: calc(100% - 40px);
     max-width: 1200px;
     margin: auto;
@@ -105,7 +101,85 @@ nav {
     align-items: center;
 }
 
-@media screen and (max-width: 900px) {
+/* social */
+.social-menu {
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: auto;
+    top:auto;
+    right: 20px;
+    bottom: 0px;
+    left: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px 0px 0px 0px;
+    
+}
+
+/* Bottom page */
+#section-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px 0px 0px;
+   
+    
+}
+.box-1 h1{
+    display: flex;
+    font-size: 90px;
+    font-weight: 600;
+    background:  linear-gradient(to right, #29323c,  #485563);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+}
+
+.box-1 p{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+
+}
+
+.box-2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+   
+
+}
+
+.carousel-slider{
+    margin-top:1%;
+    border-radius: 35px;
+    min-height: 50vh;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+.box-1 h1{
+    font-size: 30px;
+    }
+
+    .box-1 p{
+        font-size:15px;
+    }
+    .carousel-slider{
+        min-height: 10vh;
+        width: 100%;
+        height: 100%;
+    }
     nav {
         justify-content: center;
         text-align: center;
@@ -120,23 +194,20 @@ nav h1 {
     color: #E8E8E8;
     font-weight: 600;
     font-size: 40px;
+}
+
+@media screen and (max-width: 450px) {
+    .social-menu{
+        padding: 5px 15px 0px 0px;
+    }
+    
+    .box-2{
+        height: 30vh;
    
+    }
+    .carousel-slider{
+        min-height: 10vh;
+        width: 80%;
+        
+    }
 }
-
-
-/* social */
-.social-menu {
-    position: fixed;
-    width: calc(100% - 40px);
-    max-width: 1200px;
-    margin: auto;
-    top: auto;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
